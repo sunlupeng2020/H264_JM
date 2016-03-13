@@ -1,0 +1,117 @@
+\hypertarget{header_8c}{}\section{header.\+c File Reference}
+\label{header_8c}\index{header.\+c@{header.\+c}}
+
+
+H.\+264 Slice and Sequence headers.  
+
+
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}elements.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rtp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mbuffer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}defines.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}vlc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parset.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{header_8c_a012f05fda1b13afb5282bbf941feac40}{}\#define {\bfseries S\+Y\+M\+T\+R\+A\+C\+E\+S\+T\+R\+I\+N\+G}(s)\label{header_8c_a012f05fda1b13afb5282bbf941feac40}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{header_8c_a90b335325283dd75da7ab9ca3dcc2bed}{Slice\+Header} ()
+\begin{DoxyCompactList}\small\item\em Write a slice header. \end{DoxyCompactList}\item 
+\hypertarget{header_8c_ac9712d18ab3b22af72130c72239afdc3}{}int \hyperlink{header_8c_ac9712d18ab3b22af72130c72239afdc3}{get\+\_\+picture\+\_\+type} ()\label{header_8c_ac9712d18ab3b22af72130c72239afdc3}
+
+\begin{DoxyCompactList}\small\item\em Selects picture type and codes it to symbol. \end{DoxyCompactList}\item 
+int \hyperlink{header_8c_ada6ad6d5c1f405e9268ef84aae2d320b}{Partition\+\_\+\+B\+C\+\_\+\+Header} (int Part\+No)
+\begin{DoxyCompactList}\small\item\em int Partition\+\_\+\+B\+C\+\_\+\+Header () write the Partition type B, C header \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{header_8c_a6fab0f93ffbea3460f6e6f6601d7ad4d}{}int $\ast$ {\bfseries assign\+S\+E2partition} \mbox{[}2\mbox{]}\label{header_8c_a6fab0f93ffbea3460f6e6f6601d7ad4d}
+
+\item 
+int {\bfseries assign\+S\+E2partition\+\_\+\+No\+D\+P} \mbox{[}S\+E\+\_\+\+M\+A\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T\+S\mbox{]}
+\item 
+int {\bfseries assign\+S\+E2partition\+\_\+\+D\+P} \mbox{[}S\+E\+\_\+\+M\+A\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T\+S\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+H.\+264 Slice and Sequence headers. 
+
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{header_8c_ada6ad6d5c1f405e9268ef84aae2d320b}{}\index{header.\+c@{header.\+c}!Partition\+\_\+\+B\+C\+\_\+\+Header@{Partition\+\_\+\+B\+C\+\_\+\+Header}}
+\index{Partition\+\_\+\+B\+C\+\_\+\+Header@{Partition\+\_\+\+B\+C\+\_\+\+Header}!header.\+c@{header.\+c}}
+\subsubsection[{Partition\+\_\+\+B\+C\+\_\+\+Header(int Part\+No)}]{\setlength{\rightskip}{0pt plus 5cm}int Partition\+\_\+\+B\+C\+\_\+\+Header (
+\begin{DoxyParamCaption}
+\item[{int}]{Part\+No}
+\end{DoxyParamCaption}
+)}\label{header_8c_ada6ad6d5c1f405e9268ef84aae2d320b}
+
+
+int Partition\+\_\+\+B\+C\+\_\+\+Header () write the Partition type B, C header 
+
+\begin{DoxyReturn}{Returns}
+Number of bits used by the partition header
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Parameters}
+Part\+No\+: Partition Number to which the header should be written
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Side effects}
+Partition header as per V\+C\+E\+G-\/\+N72r2 is written into the appropriate partition bit buffer
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Limitations/\+Shortcomings/\+Tweaks}
+The current code does not support the change of picture parameters within one coded sequence, hence there is only one parameter set necessary. This is hard coded to zero.
+\end{DoxyParagraph}
+\begin{DoxyDate}{Date}
+October 24, 2001
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyAuthor}
+\hypertarget{header_8c_a90b335325283dd75da7ab9ca3dcc2bed}{}\index{header.\+c@{header.\+c}!Slice\+Header@{Slice\+Header}}
+\index{Slice\+Header@{Slice\+Header}!header.\+c@{header.\+c}}
+\subsubsection[{Slice\+Header()}]{\setlength{\rightskip}{0pt plus 5cm}int Slice\+Header (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{header_8c_a90b335325283dd75da7ab9ca3dcc2bed}
+
+
+Write a slice header. 
+
+img-\/$>$slice\+\_\+group\+\_\+change\+\_\+cycle can be changed before calling \hyperlink{fmo_8c_a4e4bede2670e4dd3ce96c77b9f8d0413}{Fmo\+Init()} 
+
+\subsection{Variable Documentation}
+\hypertarget{header_8c_ad22fbd9568a0dd17470092801672ff21}{}\index{header.\+c@{header.\+c}!assign\+S\+E2partition\+\_\+\+D\+P@{assign\+S\+E2partition\+\_\+\+D\+P}}
+\index{assign\+S\+E2partition\+\_\+\+D\+P@{assign\+S\+E2partition\+\_\+\+D\+P}!header.\+c@{header.\+c}}
+\subsubsection[{assign\+S\+E2partition\+\_\+\+D\+P}]{\setlength{\rightskip}{0pt plus 5cm}int assign\+S\+E2partition\+\_\+\+D\+P\mbox{[}S\+E\+\_\+\+M\+A\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T\+S\mbox{]}}\label{header_8c_ad22fbd9568a0dd17470092801672ff21}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+  \{  0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 2, 2, 2, 2, 0, 0, 0, 0 \}
+\end{DoxyCode}
+\hypertarget{header_8c_abe00a9a3a6c885ac410b7d9925c367b3}{}\index{header.\+c@{header.\+c}!assign\+S\+E2partition\+\_\+\+No\+D\+P@{assign\+S\+E2partition\+\_\+\+No\+D\+P}}
+\index{assign\+S\+E2partition\+\_\+\+No\+D\+P@{assign\+S\+E2partition\+\_\+\+No\+D\+P}!header.\+c@{header.\+c}}
+\subsubsection[{assign\+S\+E2partition\+\_\+\+No\+D\+P}]{\setlength{\rightskip}{0pt plus 5cm}int assign\+S\+E2partition\+\_\+\+No\+D\+P\mbox{[}S\+E\+\_\+\+M\+A\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T\+S\mbox{]}}\label{header_8c_abe00a9a3a6c885ac410b7d9925c367b3}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+=
+  \{  0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 \}
+\end{DoxyCode}

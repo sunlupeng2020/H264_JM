@@ -1,0 +1,99 @@
+\hypertarget{intrarefresh_8c}{}\section{intrarefresh.\+c File Reference}
+\label{intrarefresh_8c}\index{intrarefresh.\+c@{intrarefresh.\+c}}
+
+
+Encoder support for pseudo-\/random intra macroblock refresh.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$memory.\+h$>$}\\*
+{\ttfamily \#include $<$malloc.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}intrarefresh.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{intrarefresh_8c_a73642398cb111e7ef0314cfbd9064189}{Random\+Intra\+Init} (int xsize, int ysize, int refresh)
+\begin{DoxyCompactList}\small\item\em \begin{DoxyVerb}RandomIntraInit: Initializes Random Intra module.  Should be called
+only after initialization (or changes) of the picture size or the
+random intra refresh value.  In version jm2.1 it is impossible to
+change those values on-the-fly, hence RandomIntraInit should be
+called immediately after the parsing of the config file
+\end{DoxyVerb}
+ 图像大小改变 \end{DoxyCompactList}\item 
+int \hyperlink{intrarefresh_8c_a1264f9f8efd77dd6203f7b8c033d08c9}{Random\+Intra} (int mb)
+\begin{DoxyCompactList}\small\item\em Random\+Intra\+: Code an M\+B as Intra? \end{DoxyCompactList}\item 
+void \hyperlink{intrarefresh_8c_a3fb54e7b8f73e14bef10c6ada2dbfc6b}{Random\+Intra\+New\+Picture} ()
+\begin{DoxyCompactList}\small\item\em Random\+Intra\+New\+Picture\+: Selects new set of M\+Bs for forced Intra. \end{DoxyCompactList}\item 
+\hypertarget{intrarefresh_8c_ac4be3c573f06e4431958e595dd93c37b}{}void {\bfseries Random\+Intra\+Uninit} ()\label{intrarefresh_8c_ac4be3c573f06e4431958e595dd93c37b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Encoder support for pseudo-\/random intra macroblock refresh. 
+
+\begin{DoxyDate}{Date}
+16 June 2002
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{intrarefresh_8c_a1264f9f8efd77dd6203f7b8c033d08c9}{}\index{intrarefresh.\+c@{intrarefresh.\+c}!Random\+Intra@{Random\+Intra}}
+\index{Random\+Intra@{Random\+Intra}!intrarefresh.\+c@{intrarefresh.\+c}}
+\subsubsection[{Random\+Intra(int mb)}]{\setlength{\rightskip}{0pt plus 5cm}int Random\+Intra (
+\begin{DoxyParamCaption}
+\item[{int}]{mb}
+\end{DoxyParamCaption}
+)}\label{intrarefresh_8c_a1264f9f8efd77dd6203f7b8c033d08c9}
+
+
+Random\+Intra\+: Code an M\+B as Intra? 
+
+\begin{DoxyParagraph}{Input}
+Macroblock\+Number\+In\+Scan\+Order 
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Output}
+1 if an M\+B should be forced to Intra, according the the Refresh\+Pattern 0 otherwise 
+\end{DoxyParagraph}
+\hypertarget{intrarefresh_8c_a73642398cb111e7ef0314cfbd9064189}{}\index{intrarefresh.\+c@{intrarefresh.\+c}!Random\+Intra\+Init@{Random\+Intra\+Init}}
+\index{Random\+Intra\+Init@{Random\+Intra\+Init}!intrarefresh.\+c@{intrarefresh.\+c}}
+\subsubsection[{Random\+Intra\+Init(int xsize, int ysize, int refresh)}]{\setlength{\rightskip}{0pt plus 5cm}void Random\+Intra\+Init (
+\begin{DoxyParamCaption}
+\item[{int}]{xsize, }
+\item[{int}]{ysize, }
+\item[{int}]{refresh}
+\end{DoxyParamCaption}
+)}\label{intrarefresh_8c_a73642398cb111e7ef0314cfbd9064189}
+
+
+\begin{DoxyVerb}RandomIntraInit: Initializes Random Intra module.  Should be called
+only after initialization (or changes) of the picture size or the
+random intra refresh value.  In version jm2.1 it is impossible to
+change those values on-the-fly, hence RandomIntraInit should be
+called immediately after the parsing of the config file
+\end{DoxyVerb}
+ 图像大小改变 
+
+\begin{DoxyParagraph}{Input\+:}
+xsize, ysize\+: size of the picture (in M\+Bs) refresh \+: refresh rate in M\+Bs per picture 
+\end{DoxyParagraph}
+\hypertarget{intrarefresh_8c_a3fb54e7b8f73e14bef10c6ada2dbfc6b}{}\index{intrarefresh.\+c@{intrarefresh.\+c}!Random\+Intra\+New\+Picture@{Random\+Intra\+New\+Picture}}
+\index{Random\+Intra\+New\+Picture@{Random\+Intra\+New\+Picture}!intrarefresh.\+c@{intrarefresh.\+c}}
+\subsubsection[{Random\+Intra\+New\+Picture()}]{\setlength{\rightskip}{0pt plus 5cm}void Random\+Intra\+New\+Picture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{intrarefresh_8c_a3fb54e7b8f73e14bef10c6ada2dbfc6b}
+
+
+Random\+Intra\+New\+Picture\+: Selects new set of M\+Bs for forced Intra. 
+
+\begin{DoxyParagraph}{}
+This function should be called exactly once per picture, and requires a finished initialization 
+\end{DoxyParagraph}

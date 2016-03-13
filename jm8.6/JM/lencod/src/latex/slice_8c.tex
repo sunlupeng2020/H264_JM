@@ -1,0 +1,139 @@
+\hypertarget{slice_8c}{}\section{slice.\+c File Reference}
+\label{slice_8c}\index{slice.\+c@{slice.\+c}}
+
+
+generate the slice header, setup the bit buffer for slices, and generates the slice N\+A\+L\+U(s)  
+
+
+{\ttfamily \#include \char`\"{}contributors.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/timeb.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}rtp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nalu.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}annexb.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parset.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fmo.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}vlc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}cabac.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}elements.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mbuffer.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{slice_8c_adbc9acedbf96bf2ceb4496d0473fcec4}{}void \hyperlink{slice_8c_adbc9acedbf96bf2ceb4496d0473fcec4}{init\+\_\+ref\+\_\+pic\+\_\+list\+\_\+reordering} ()\label{slice_8c_adbc9acedbf96bf2ceb4496d0473fcec4}
+
+\begin{DoxyCompactList}\small\item\em init\+\_\+ref\+\_\+pic\+\_\+list\+\_\+reordering initializations should go here \end{DoxyCompactList}\item 
+int \hyperlink{slice_8c_a7e9fe475f837b046e2c801afc129f0fd}{start\+\_\+slice} ()
+\begin{DoxyCompactList}\small\item\em This function generates the slice (and partition) header(s) \end{DoxyCompactList}\item 
+int \hyperlink{slice_8c_a52c3ee904fa4614482ef4c207f03fe92}{terminate\+\_\+slice} ()
+\begin{DoxyCompactList}\small\item\em This function terminates a slice (but doesn\textquotesingle{}t write it out), the old terminate\+\_\+slice (0) \end{DoxyCompactList}\item 
+int \hyperlink{slice_8c_aa7b7eaff4061f6769abed692835c6a74}{encode\+\_\+one\+\_\+slice} (int Slice\+Group\+Id, Picture $\ast$pic)
+\begin{DoxyCompactList}\small\item\em Encodes one slice. \end{DoxyCompactList}\item 
+void \hyperlink{slice_8c_ac100955b9909bbbea6b90d553701f478}{free\+\_\+slice\+\_\+list} (Picture $\ast$curr\+Pic)
+\begin{DoxyCompactList}\small\item\em Memory frees of all Slice structures and of its dependent data structures. \end{DoxyCompactList}\item 
+\hypertarget{slice_8c_ade1bb85bb7202bdc9cc140965c1f82ca}{}void \hyperlink{slice_8c_ade1bb85bb7202bdc9cc140965c1f82ca}{modify\+\_\+redundant\+\_\+pic\+\_\+cnt} (unsigned char $\ast$buffer)\label{slice_8c_ade1bb85bb7202bdc9cc140965c1f82ca}
+
+\begin{DoxyCompactList}\small\item\em This function set the value of a bit in a bitstream to 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{slice_8c_a6cb19d3cc47256c79bf137a84f316255}{}Colocated\+Params $\ast$ {\bfseries Co\+\_\+located}\label{slice_8c_a6cb19d3cc47256c79bf137a84f316255}
+
+\item 
+\hypertarget{slice_8c_abd7256d85cbd4360fa33a1a6c62a5c8e}{}Storable\+Picture $\ast$$\ast$ {\bfseries list\+X} \mbox{[}6\mbox{]}\label{slice_8c_abd7256d85cbd4360fa33a1a6c62a5c8e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+generate the slice header, setup the bit buffer for slices, and generates the slice N\+A\+L\+U(s) 
+
+\hyperlink{slice_8c}{slice.\+c} \begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Thomas Stockhammer \href{mailto:stockhammer@ei.tum.de}{\tt stockhammer@ei.\+tum.\+de}
+\item Detlev Marpe \href{mailto:marpe@hhi.de}{\tt marpe@hhi.\+de}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{slice_8c_aa7b7eaff4061f6769abed692835c6a74}{}\index{slice.\+c@{slice.\+c}!encode\+\_\+one\+\_\+slice@{encode\+\_\+one\+\_\+slice}}
+\index{encode\+\_\+one\+\_\+slice@{encode\+\_\+one\+\_\+slice}!slice.\+c@{slice.\+c}}
+\subsubsection[{encode\+\_\+one\+\_\+slice(int Slice\+Group\+Id, Picture $\ast$pic)}]{\setlength{\rightskip}{0pt plus 5cm}int encode\+\_\+one\+\_\+slice (
+\begin{DoxyParamCaption}
+\item[{int}]{Slice\+Group\+Id, }
+\item[{Picture $\ast$}]{pic}
+\end{DoxyParamCaption}
+)}\label{slice_8c_aa7b7eaff4061f6769abed692835c6a74}
+
+
+Encodes one slice. 
+
+\begin{DoxyParagraph}{}
+returns the number of coded M\+Bs in the S\+Lice 
+\end{DoxyParagraph}
+Go back to the previous M\+B to recode it
+
+This following ugly code breaks slices, at least for a slice mode that accumulates a certain number of bits into one slice. The suggested algorithm is as follows\+:
+
+Save\+State (Bitstream, stats, etc. etc.); Bits\+For\+This\+M\+B\+Pair\+In\+Frame\+Mode = Code\+M\+B (Upper, F\+R\+A\+M\+E\+\_\+\+M\+O\+D\+E) + Code\+M\+B (Lower, F\+R\+A\+M\+E\+\_\+\+M\+O\+D\+E); Distortion\+For\+This\+M\+B\+Pair\+In\+Frame\+Mode = Calculate\+Distortion(\+Upper) + Calculate\+Distortion (Lower); Restore\+State(); Bits\+For\+This\+M\+B\+Pair\+In\+Field\+Mode = Code\+M\+B (Upper, F\+I\+E\+L\+D\+\_\+\+M\+O\+D\+E) + Code\+M\+B (Lower, F\+I\+E\+L\+D\+\_\+\+M\+O\+D\+E); Distortion\+For\+This\+M\+B\+Pair\+In\+Frame\+Mode = Calculate\+Distortion(\+Upper) + Calculate\+Distortion (Lower); Frame\+Field\+Mode = Decision (...) Restore\+State() if (Frame\+Field\+Mode == F\+R\+A\+M\+E) \{ Code\+M\+B (Upper, F\+R\+A\+M\+E); Code\+M\+B (Lower, F\+R\+A\+M\+E); \} else \{ Code\+M\+B (Upper F\+I\+E\+L\+D); Code\+M\+B (Lower, F\+I\+E\+L\+D); \}
+
+Open questions/issues\+:
+\begin{DoxyEnumerate}
+\item C\+A\+B\+A\+C/\+C\+A-\/\+V\+L\+C state\+: It seems that the C\+A\+B\+A\+C/\+C\+A\+\_\+\+V\+L\+C states are changed during the dummy encoding processes (for the R-\/\+D based selection), but that they are never reset, once the selection is made. I believe that this breaks the M\+B-\/adaptive frame/field coding. The necessary code for the state saves is readily available in \hyperlink{macroblock_8c}{macroblock.\+c}, \hyperlink{macroblock_8c_af2da5d686cbd9b13377be3a2cc5700d0}{start\+\_\+macroblock()} and \hyperlink{macroblock_8c_a8d0ad53b9e4d4e96db01e2aec561902f}{terminate\+\_\+macroblock()} (this code needs to be double checked that it works with C\+A-\/\+V\+L\+C as well
+\item would it be an option to allocate Bitstreams with zero data in them (or copy the already generated bitstream) for the \char`\"{}test coding\char`\"{}? 
+\end{DoxyEnumerate}\hypertarget{slice_8c_ac100955b9909bbbea6b90d553701f478}{}\index{slice.\+c@{slice.\+c}!free\+\_\+slice\+\_\+list@{free\+\_\+slice\+\_\+list}}
+\index{free\+\_\+slice\+\_\+list@{free\+\_\+slice\+\_\+list}!slice.\+c@{slice.\+c}}
+\subsubsection[{free\+\_\+slice\+\_\+list(\+Picture $\ast$curr\+Pic)}]{\setlength{\rightskip}{0pt plus 5cm}void free\+\_\+slice\+\_\+list (
+\begin{DoxyParamCaption}
+\item[{Picture $\ast$}]{curr\+Pic}
+\end{DoxyParamCaption}
+)}\label{slice_8c_ac100955b9909bbbea6b90d553701f478}
+
+
+Memory frees of all Slice structures and of its dependent data structures. 
+
+\begin{DoxyParagraph}{Input\+:}
+Image Parameters struct struct img\+\_\+par $\ast$img 
+\end{DoxyParagraph}
+\hypertarget{slice_8c_a7e9fe475f837b046e2c801afc129f0fd}{}\index{slice.\+c@{slice.\+c}!start\+\_\+slice@{start\+\_\+slice}}
+\index{start\+\_\+slice@{start\+\_\+slice}!slice.\+c@{slice.\+c}}
+\subsubsection[{start\+\_\+slice()}]{\setlength{\rightskip}{0pt plus 5cm}int start\+\_\+slice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{slice_8c_a7e9fe475f837b046e2c801afc129f0fd}
+
+
+This function generates the slice (and partition) header(s) 
+
+\begin{DoxyReturn}{Returns}
+number of bits used for the slice (and partition) header(s)
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Side effects\+:}
+Adds slice/partition header symbols to the symbol buffer increments Picture-\/$>$no\+\_\+slices, allocates memory for the slice, sets img-\/$>$curr\+Slice 
+\end{DoxyParagraph}
+Initialize C\+A\+B\+A\+C \hypertarget{slice_8c_a52c3ee904fa4614482ef4c207f03fe92}{}\index{slice.\+c@{slice.\+c}!terminate\+\_\+slice@{terminate\+\_\+slice}}
+\index{terminate\+\_\+slice@{terminate\+\_\+slice}!slice.\+c@{slice.\+c}}
+\subsubsection[{terminate\+\_\+slice()}]{\setlength{\rightskip}{0pt plus 5cm}int terminate\+\_\+slice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{slice_8c_a52c3ee904fa4614482ef4c207f03fe92}
+
+
+This function terminates a slice (but doesn\textquotesingle{}t write it out), the old terminate\+\_\+slice (0) 
+
+\begin{DoxyReturn}{Returns}
+0 if O\+K, ~\newline
+ 1 in case of error 
+\end{DoxyReturn}

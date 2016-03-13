@@ -1,0 +1,449 @@
+﻿生成启动时间为 2015/8/4 星期二 21:59:42。
+     1>项目“C:\Users\Administrator\Desktop\jm8.6\JM\lencod.vcxproj”在节点 2 上(rebuild 个目标)。
+     1>_PrepareForClean:
+         正在删除文件“.\lencod/Debug\lencod.lastbuildstate”。
+       InitializeBuildStatus:
+         正在创建“.\lencod/Debug\lencod.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Ilencod/inc /Ilcommon/inc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\lencod/Debug/" /Fd".\lencod/Debug/vc100.pdb" /FR".\lencod/Debug\\" /Gd /TC /analyze- /errorReport:prompt lencod\src\annexb.c lencod\src\biariencode.c lencod\src\block.c lencod\src\cabac.c lencod\src\configfile.c lencod\src\context_ini.c lencod\src\decoder.c lencod\src\fast_me.c lencod\src\filehandle.c lencod\src\fmo.c lencod\src\header.c lencod\src\image.c lencod\src\intrarefresh.c lencod\src\leaky_bucket.c lencod\src\lencod.c lencod\src\loopFilter.c lencod\src\macroblock.c lencod\src\mb_access.c lencod\src\mbuffer.c lencod\src\memalloc.c "lencod\src\mv-search.c" lencod\src\nal.c lencod\src\nalu.c lencod\src\nalucommon.c lencod\src\output.c lencod\src\parset.c lencod\src\parsetcommon.c lencod\src\ratectl.c lencod\src\rdopt.c lencod\src\rdopt_coding_state.c lencod\src\refbuf.c lencod\src\rtp.c lencod\src\sei.c lencod\src\slice.c lencod\src\vlc.c lencod\src\weighted_prediction.c
+         annexb.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\annexb.c(96): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+         biariencode.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\biariencode.c(79): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         block.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         cabac.c
+         configfile.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(244): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(269): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(271): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(277): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(284): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(289): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(409): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(415): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(425): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(427): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(435): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(440): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : 参见“sscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(442): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(524): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(530): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(536): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(543): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(549): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(555): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(564): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(569): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(574): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(579): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(587): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(593): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(605): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(613): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(621): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(627): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(676): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(682): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(690): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(697): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(712): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(719): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(724): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(726): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(730): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(732): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(736): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(738): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(747): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(758): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(760): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(773): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(774): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(786): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(787): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(788): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(789): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(805): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(808): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(811): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(822): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(830): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(836): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(843): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(856): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(863): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(873): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(879): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(886): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(893): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(904): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(920): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(957): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(965): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(970): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(975): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(980): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(985): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(990): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(1000): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(1005): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(1010): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(1015): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(1025): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\configfile.c(1031): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         context_ini.c
+         decoder.c
+         fast_me.c
+         filehandle.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\filehandle.c(76): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\filehandle.c(124): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         fmo.c
+         header.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\header.c(571): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\header.c(577): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+         image.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\image.c(317): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\image.c(497): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\image.c(502): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\image.c(962): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         intrarefresh.c
+         leaky_bucket.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\leaky_bucket.c(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\leaky_bucket.c(61): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(253) : 参见“fscanf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\leaky_bucket.c(130): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\leaky_bucket.c(132): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         lencod.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(959): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(961): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1158): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1160): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1162): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1184): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1186): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1192): warning C4996: '_strdate': This function or variable may be unsafe. Consider using _strdate_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(177) : 参见“_strdate”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1195): warning C4996: '_strtime': This function or variable may be unsafe. Consider using _strtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\time.h(181) : 参见“_strtime”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\lencod.c(1276): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+         loopFilter.c
+         macroblock.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(664): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(1790): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(1906): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(1936): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(1962): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(1963): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(1995): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2013): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2014): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2032): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2057): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2078): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2079): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2107): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2135): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2206): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2400): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2404): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2478): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2483): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2643): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2711): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2771): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2855): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2881): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2938): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(2993): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3163): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3180): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3190): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3202): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3220): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3331): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3378): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3410): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3458): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\macroblock.c(3500): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         mb_access.c
+         mbuffer.c
+         memalloc.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\memalloc.c(366): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         正在生成代码...
+         正在编译...
+         mv-search.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\mv-search.c(1545): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\mv-search.c(1611): warning C4996: '_ftime64': This function or variable may be unsafe. Consider using _ftime64_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\sys\timeb.h(124) : 参见“_ftime64”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\mv-search.c(1616): warning C4244: “=”: 从“__time64_t”转换到“int”，可能丢失数据
+         nal.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         nalu.c
+         nalucommon.c
+         output.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         parset.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         parsetcommon.c
+         ratectl.c
+         rdopt.c
+         rdopt_coding_state.c
+         refbuf.c
+         rtp.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\rtp.c(305): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+         sei.c
+         slice.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\slice.c(292): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : 参见“_snprintf”的声明
+         vlc.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\vlc.c(67): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\vlc.c(106): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\vlc.c(148): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\src\vlc.c(199): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : 参见“strncpy”的声明
+         weighted_prediction.c
+     1>c:\users\administrator\desktop\jm8.6\jm\lencod\inc\contributors.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+         正在生成代码...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\lencod/Debug\lencod.exe.embed.manifest.res" .\lencod/Debug\lencod_manifest.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(C:\Users\Administrator\Desktop\jm8.6\JM\.\lencod/Debug\lencod.exe) 与 Linker 的 OutputFile 属性值(C:\Users\Administrator\Desktop\jm8.6\JM\bin\lencod.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"./bin/lencod.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\lencod/Debug\lencod.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\lencod/Debug/lencod.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\lencod/Debug\lencod.lib" /MACHINE:X86 .\lencod/Debug\lencod.exe.embed.manifest.res
+         .\lencod/Debug/annexb.obj
+         .\lencod/Debug/biariencode.obj
+         .\lencod/Debug/block.obj
+         .\lencod/Debug/cabac.obj
+         .\lencod/Debug/configfile.obj
+         .\lencod/Debug/context_ini.obj
+         .\lencod/Debug/decoder.obj
+         .\lencod/Debug/fast_me.obj
+         .\lencod/Debug/filehandle.obj
+         .\lencod/Debug/fmo.obj
+         .\lencod/Debug/header.obj
+         .\lencod/Debug/image.obj
+         .\lencod/Debug/intrarefresh.obj
+         .\lencod/Debug/leaky_bucket.obj
+         .\lencod/Debug/lencod.obj
+         .\lencod/Debug/loopFilter.obj
+         .\lencod/Debug/macroblock.obj
+         .\lencod/Debug/mb_access.obj
+         .\lencod/Debug/mbuffer.obj
+         .\lencod/Debug/memalloc.obj
+         ".\lencod/Debug/mv-search.obj"
+         .\lencod/Debug/nal.obj
+         .\lencod/Debug/nalu.obj
+         .\lencod/Debug/nalucommon.obj
+         .\lencod/Debug/output.obj
+         .\lencod/Debug/parset.obj
+         .\lencod/Debug/parsetcommon.obj
+         .\lencod/Debug/ratectl.obj
+         .\lencod/Debug/rdopt.obj
+         .\lencod/Debug/rdopt_coding_state.obj
+         .\lencod/Debug/refbuf.obj
+         .\lencod/Debug/rtp.obj
+         .\lencod/Debug/sei.obj
+         .\lencod/Debug/slice.obj
+         .\lencod/Debug/vlc.obj
+         .\lencod/Debug/weighted_prediction.obj
+       Manifest:
+         正在删除文件“.\lencod/Debug\lencod.exe.embed.manifest”。
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:".\lencod/Debug\lencod.exe.embed.manifest" /manifest .\lencod/Debug\lencod.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\lencod/Debug\lencod.exe.embed.manifest.res" .\lencod/Debug\lencod_manifest.rc 
+       LinkEmbedManifest:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"./bin/lencod.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:".\lencod/Debug\lencod.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\lencod/Debug/lencod.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\lencod/Debug\lencod.lib" /MACHINE:X86 .\lencod/Debug\lencod.exe.embed.manifest.res
+         .\lencod/Debug/annexb.obj
+         .\lencod/Debug/biariencode.obj
+         .\lencod/Debug/block.obj
+         .\lencod/Debug/cabac.obj
+         .\lencod/Debug/configfile.obj
+         .\lencod/Debug/context_ini.obj
+         .\lencod/Debug/decoder.obj
+         .\lencod/Debug/fast_me.obj
+         .\lencod/Debug/filehandle.obj
+         .\lencod/Debug/fmo.obj
+         .\lencod/Debug/header.obj
+         .\lencod/Debug/image.obj
+         .\lencod/Debug/intrarefresh.obj
+         .\lencod/Debug/leaky_bucket.obj
+         .\lencod/Debug/lencod.obj
+         .\lencod/Debug/loopFilter.obj
+         .\lencod/Debug/macroblock.obj
+         .\lencod/Debug/mb_access.obj
+         .\lencod/Debug/mbuffer.obj
+         .\lencod/Debug/memalloc.obj
+         ".\lencod/Debug/mv-search.obj"
+         .\lencod/Debug/nal.obj
+         .\lencod/Debug/nalu.obj
+         .\lencod/Debug/nalucommon.obj
+         .\lencod/Debug/output.obj
+         .\lencod/Debug/parset.obj
+         .\lencod/Debug/parsetcommon.obj
+         .\lencod/Debug/ratectl.obj
+         .\lencod/Debug/rdopt.obj
+         .\lencod/Debug/rdopt_coding_state.obj
+         .\lencod/Debug/refbuf.obj
+         .\lencod/Debug/rtp.obj
+         .\lencod/Debug/sei.obj
+         .\lencod/Debug/slice.obj
+         .\lencod/Debug/vlc.obj
+         .\lencod/Debug/weighted_prediction.obj
+         lencod.vcxproj -> C:\Users\Administrator\Desktop\jm8.6\JM\.\lencod/Debug\lencod.exe
+       BscMake:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\bscmake.exe /nologo /o".\lencod/Debug/lencod.bsc" .\lencod/Debug\annexb.sbr .\lencod/Debug\biariencode.sbr .\lencod/Debug\block.sbr .\lencod/Debug\cabac.sbr .\lencod/Debug\configfile.sbr .\lencod/Debug\context_ini.sbr .\lencod/Debug\decoder.sbr .\lencod/Debug\fast_me.sbr .\lencod/Debug\filehandle.sbr .\lencod/Debug\fmo.sbr .\lencod/Debug\header.sbr .\lencod/Debug\image.sbr .\lencod/Debug\intrarefresh.sbr .\lencod/Debug\leaky_bucket.sbr .\lencod/Debug\lencod.sbr .\lencod/Debug\loopFilter.sbr .\lencod/Debug\macroblock.sbr .\lencod/Debug\mb_access.sbr .\lencod/Debug\mbuffer.sbr .\lencod/Debug\memalloc.sbr ".\lencod/Debug\mv-search.sbr" .\lencod/Debug\nal.sbr .\lencod/Debug\nalu.sbr .\lencod/Debug\nalucommon.sbr .\lencod/Debug\output.sbr .\lencod/Debug\parset.sbr .\lencod/Debug\parsetcommon.sbr .\lencod/Debug\ratectl.sbr .\lencod/Debug\rdopt.sbr .\lencod/Debug\rdopt_coding_state.sbr .\lencod/Debug\refbuf.sbr .\lencod/Debug\rtp.sbr .\lencod/Debug\sei.sbr .\lencod/Debug\slice.sbr .\lencod/Debug\vlc.sbr .\lencod/Debug\weighted_prediction.sbr
+       FinalizeBuildStatus:
+         正在删除文件“.\lencod/Debug\lencod.unsuccessfulbuild”。
+         正在对“.\lencod/Debug\lencod.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\Users\Administrator\Desktop\jm8.6\JM\lencod.vcxproj”(rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:02.31

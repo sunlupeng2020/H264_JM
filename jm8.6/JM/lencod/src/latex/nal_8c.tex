@@ -1,0 +1,79 @@
+\hypertarget{nal_8c}{}\section{nal.\+c File Reference}
+\label{nal_8c}\index{nal.\+c@{nal.\+c}}
+
+
+Handles the operations on converting String of Data Bits (S\+O\+D\+B) to Raw Byte Sequence Payload (R\+B\+S\+P), and then onto Encapsulate Byte Sequence Payload (E\+B\+S\+P).  
+
+
+{\ttfamily \#include \char`\"{}contributors.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/timeb.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}defines.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{nal_8c_a03ceb793be4c5bd44d6e1afb06870351}{}void {\bfseries S\+O\+D\+Bto\+R\+B\+S\+P} (Bitstream $\ast$curr\+Stream)\label{nal_8c_a03ceb793be4c5bd44d6e1afb06870351}
+
+\item 
+int \hyperlink{nal_8c_a50bf0c7a83434ae11a840c6b3cd582e5}{R\+B\+S\+Pto\+E\+B\+S\+P} (byte $\ast$stream\+Buffer, int begin\+\_\+bytepos, int end\+\_\+bytepos, int min\+\_\+num\+\_\+bytes)
+\begin{DoxyCompactList}\small\item\em This function converts a R\+B\+S\+P payload to an E\+B\+S\+P payload. \end{DoxyCompactList}\item 
+\hypertarget{nal_8c_ad7822668040568b0c88abaf3c0e8b62a}{}void \hyperlink{nal_8c_ad7822668040568b0c88abaf3c0e8b62a}{Alloc\+Nal\+Payload\+Buffer} ()\label{nal_8c_ad7822668040568b0c88abaf3c0e8b62a}
+
+\begin{DoxyCompactList}\small\item\em Initializes N\+A\+L module (allocates N\+A\+L\+\_\+\+Payload\+\_\+buffer) \end{DoxyCompactList}\item 
+\hypertarget{nal_8c_a463822efd0650318ede2256ca6b1b64f}{}void \hyperlink{nal_8c_a463822efd0650318ede2256ca6b1b64f}{Free\+Nal\+Payload\+Buffer} ()\label{nal_8c_a463822efd0650318ede2256ca6b1b64f}
+
+\begin{DoxyCompactList}\small\item\em Finits N\+A\+L module (frees N\+A\+L\+\_\+\+Payload\+\_\+buffer) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Handles the operations on converting String of Data Bits (S\+O\+D\+B) to Raw Byte Sequence Payload (R\+B\+S\+P), and then onto Encapsulate Byte Sequence Payload (E\+B\+S\+P). 
+
+\hyperlink{nal_8c}{nal.\+c} \begin{DoxyDate}{Date}
+14 June 2002 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Shankar Regunathan \href{mailto:shanre@microsoft.de}{\tt shanre@microsoft.\+de}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{nal_8c_a50bf0c7a83434ae11a840c6b3cd582e5}{}\index{nal.\+c@{nal.\+c}!R\+B\+S\+Pto\+E\+B\+S\+P@{R\+B\+S\+Pto\+E\+B\+S\+P}}
+\index{R\+B\+S\+Pto\+E\+B\+S\+P@{R\+B\+S\+Pto\+E\+B\+S\+P}!nal.\+c@{nal.\+c}}
+\subsubsection[{R\+B\+S\+Pto\+E\+B\+S\+P(byte $\ast$stream\+Buffer, int begin\+\_\+bytepos, int end\+\_\+bytepos, int min\+\_\+num\+\_\+bytes)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+S\+Pto\+E\+B\+S\+P (
+\begin{DoxyParamCaption}
+\item[{byte $\ast$}]{stream\+Buffer, }
+\item[{int}]{begin\+\_\+bytepos, }
+\item[{int}]{end\+\_\+bytepos, }
+\item[{int}]{min\+\_\+num\+\_\+bytes}
+\end{DoxyParamCaption}
+)}\label{nal_8c_a50bf0c7a83434ae11a840c6b3cd582e5}
+
+
+This function converts a R\+B\+S\+P payload to an E\+B\+S\+P payload. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream\+Buffer} & pointer to data bits \\
+\hline
+{\em begin\+\_\+bytepos} & The byte position after start-\/code, after which stuffing to prevent start-\/code emulation begins. \\
+\hline
+{\em end\+\_\+bytepos} & Size of stream\+Buffer in bytes. \\
+\hline
+{\em min\+\_\+num\+\_\+bytes} & Minimum number of bytes in payload. Should be 0 for V\+L\+C entropy coding mode. Determines number of stuffed words for C\+A\+B\+A\+C mode. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Size of stream\+Buffer after stuffing. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+N\+A\+L\+\_\+\+Payload\+\_\+buffer is used as temporary buffer to store data. 
+\end{DoxyNote}

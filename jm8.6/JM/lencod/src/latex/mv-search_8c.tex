@@ -1,0 +1,157 @@
+\hypertarget{mv-search_8c}{}\section{mv-\/search.c File Reference}
+\label{mv-search_8c}\index{mv-\/search.\+c@{mv-\/search.\+c}}
+
+
+Motion Vector Search, unified for B and P Pictures.  
+
+
+{\ttfamily \#include \char`\"{}contributors.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$limits.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mv-\/search.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}refbuf.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}memalloc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mb\+\_\+access.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fast\+\_\+me.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$time.\+h$>$}\\*
+{\ttfamily \#include $<$sys/timeb.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{mv-search_8c_aff110b487a4d64b9a979da3778ea2d43}{}void \hyperlink{mv-search_8c_aff110b487a4d64b9a979da3778ea2d43}{Set\+Motion\+Vector\+Predictor} (int pmv\mbox{[}2\mbox{]}, int $\ast$$\ast$$\ast$ref\+Pic, int $\ast$$\ast$$\ast$$\ast$tmp\+\_\+mv, int ref\+\_\+frame, int list, int block\+\_\+x, int block\+\_\+y, int blockshape\+\_\+x, int blockshape\+\_\+y)\label{mv-search_8c_aff110b487a4d64b9a979da3778ea2d43}
+
+\begin{DoxyCompactList}\small\item\em Set motion vector predictor. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a36a45b3e172cbf23c4a2a5c81bd2aedd}{}void \hyperlink{mv-search_8c_a36a45b3e172cbf23c4a2a5c81bd2aedd}{Init\+\_\+\+Motion\+\_\+\+Search\+\_\+\+Module} ()\label{mv-search_8c_a36a45b3e172cbf23c4a2a5c81bd2aedd}
+
+\begin{DoxyCompactList}\small\item\em Initialize the motion search. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_ac39f0c73e2098d49e0b482a837c2e870}{}void \hyperlink{mv-search_8c_ac39f0c73e2098d49e0b482a837c2e870}{Clear\+\_\+\+Motion\+\_\+\+Search\+\_\+\+Module} ()\label{mv-search_8c_ac39f0c73e2098d49e0b482a837c2e870}
+
+\begin{DoxyCompactList}\small\item\em Free memory used by motion search. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a0395ce579e436c83fb0a2241ae871816}{}int \hyperlink{mv-search_8c_a0395ce579e436c83fb0a2241ae871816}{Full\+Pel\+Block\+Motion\+Search} (pel\+\_\+t $\ast$$\ast$orig\+\_\+pic, int ref, int list, int pic\+\_\+pix\+\_\+x, int pic\+\_\+pix\+\_\+y, int blocktype, int pred\+\_\+mv\+\_\+x, int pred\+\_\+mv\+\_\+y, int $\ast$mv\+\_\+x, int $\ast$mv\+\_\+y, int search\+\_\+range, int min\+\_\+mcost, double lambda)\label{mv-search_8c_a0395ce579e436c83fb0a2241ae871816}
+
+\begin{DoxyCompactList}\small\item\em Full pixel block motion search. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a8e8a81fe1e93da04683a97871d79ef79}{}int \hyperlink{mv-search_8c_a8e8a81fe1e93da04683a97871d79ef79}{S\+A\+T\+D} (int $\ast$diff, int use\+\_\+hadamard)\label{mv-search_8c_a8e8a81fe1e93da04683a97871d79ef79}
+
+\begin{DoxyCompactList}\small\item\em Calculate S\+A(\+T)D. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a9445488f5955a92d8bdee6ed23aaf628}{}int \hyperlink{mv-search_8c_a9445488f5955a92d8bdee6ed23aaf628}{Sub\+Pel\+Block\+Motion\+Search} (pel\+\_\+t $\ast$$\ast$orig\+\_\+pic, int ref, int list, int pic\+\_\+pix\+\_\+x, int pic\+\_\+pix\+\_\+y, int blocktype, int pred\+\_\+mv\+\_\+x, int pred\+\_\+mv\+\_\+y, int $\ast$mv\+\_\+x, int $\ast$mv\+\_\+y, int search\+\_\+pos2, int search\+\_\+pos4, int min\+\_\+mcost, double lambda)\label{mv-search_8c_a9445488f5955a92d8bdee6ed23aaf628}
+
+\begin{DoxyCompactList}\small\item\em Sub pixel block motion search. \end{DoxyCompactList}\item 
+int \hyperlink{mv-search_8c_a3c37152c2505f440a8b54f16848781e3}{Block\+Motion\+Search} (int ref, int list, int mb\+\_\+x, int mb\+\_\+y, int blocktype, int search\+\_\+range, double lambda)
+\begin{DoxyCompactList}\small\item\em Block motion search. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a5591a736d2fedc52adf7c8bca26b8722}{}int \hyperlink{mv-search_8c_a5591a736d2fedc52adf7c8bca26b8722}{B\+I\+D\+Partition\+Cost} (int blocktype, int block8x8, int fw\+\_\+ref, int bw\+\_\+ref, int lambda\+\_\+factor)\label{mv-search_8c_a5591a736d2fedc52adf7c8bca26b8722}
+
+\begin{DoxyCompactList}\small\item\em Motion Cost for Bidirectional modes. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_aab3955e62ae69b368b394509c2c4ca00}{}int \hyperlink{mv-search_8c_aab3955e62ae69b368b394509c2c4ca00}{Get\+Skip\+Cost\+M\+B} (double lambda)\label{mv-search_8c_aab3955e62ae69b368b394509c2c4ca00}
+
+\begin{DoxyCompactList}\small\item\em Get cost for skip mode for an macroblock. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a5f41cccd1879953dc1e2f33412bca720}{}void \hyperlink{mv-search_8c_a5f41cccd1879953dc1e2f33412bca720}{Find\+Skip\+Mode\+Motion\+Vector} ()\label{mv-search_8c_a5f41cccd1879953dc1e2f33412bca720}
+
+\begin{DoxyCompactList}\small\item\em Find motion vector for the Skip mode. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a144c4058e9a0657ddd3ddc32dd38f3f5}{}int \hyperlink{mv-search_8c_a144c4058e9a0657ddd3ddc32dd38f3f5}{Get\+\_\+\+Direct\+\_\+\+Cost8x8} (int block, double lambda)\label{mv-search_8c_a144c4058e9a0657ddd3ddc32dd38f3f5}
+
+\begin{DoxyCompactList}\small\item\em Get cost for direct mode for an 8x8 block. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_a37112b538d0ad64eee55ac7103823437}{}int \hyperlink{mv-search_8c_a37112b538d0ad64eee55ac7103823437}{Get\+\_\+\+Direct\+\_\+\+Cost\+M\+B} (double lambda)\label{mv-search_8c_a37112b538d0ad64eee55ac7103823437}
+
+\begin{DoxyCompactList}\small\item\em Get cost for direct mode for an macroblock. \end{DoxyCompactList}\item 
+\hypertarget{mv-search_8c_abe110bf11b65be80781634bccd7ebb1c}{}void \hyperlink{mv-search_8c_abe110bf11b65be80781634bccd7ebb1c}{Partition\+Motion\+Search} (int blocktype, int block8x8, double lambda)\label{mv-search_8c_abe110bf11b65be80781634bccd7ebb1c}
+
+\begin{DoxyCompactList}\small\item\em Motion search for a partition. \end{DoxyCompactList}\item 
+void \hyperlink{mv-search_8c_ac591a64a8380fcc1581becfaaafdd8f5}{Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors} ()
+\item 
+\hypertarget{mv-search_8c_a10b5887237c2d5b4949ecb6c67db38c7}{}int \hyperlink{mv-search_8c_a10b5887237c2d5b4949ecb6c67db38c7}{sign} (int a, int b)\label{mv-search_8c_a10b5887237c2d5b4949ecb6c67db38c7}
+
+\begin{DoxyCompactList}\small\item\em control the sign of a with b \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{mv-search_8c_accc17f09f2ef9160034a5a020b90f8e0}{}int {\bfseries max\+\_\+mvd}\label{mv-search_8c_accc17f09f2ef9160034a5a020b90f8e0}
+
+\item 
+\hypertarget{mv-search_8c_a26f47e659fcefc71145c44d6edcbae31}{}int $\ast$ {\bfseries spiral\+\_\+search\+\_\+x}\label{mv-search_8c_a26f47e659fcefc71145c44d6edcbae31}
+
+\item 
+\hypertarget{mv-search_8c_af6d74889ce864c638caee46a0be8e340}{}int $\ast$ {\bfseries spiral\+\_\+search\+\_\+y}\label{mv-search_8c_af6d74889ce864c638caee46a0be8e340}
+
+\item 
+\hypertarget{mv-search_8c_a600fd32e438edc6656caa73e3573ccbc}{}int $\ast$ {\bfseries mvbits}\label{mv-search_8c_a600fd32e438edc6656caa73e3573ccbc}
+
+\item 
+\hypertarget{mv-search_8c_aaae4335f7c48746ce8e257f47933c838}{}int $\ast$ {\bfseries refbits}\label{mv-search_8c_aaae4335f7c48746ce8e257f47933c838}
+
+\item 
+\hypertarget{mv-search_8c_adbe75a1c92b218d637ced47c811f150c}{}int $\ast$ {\bfseries byte\+\_\+abs}\label{mv-search_8c_adbe75a1c92b218d637ced47c811f150c}
+
+\item 
+\hypertarget{mv-search_8c_ae1b5f68bce24b01aaa149d8df1c65e8f}{}int $\ast$$\ast$$\ast$$\ast$ {\bfseries motion\+\_\+cost}\label{mv-search_8c_ae1b5f68bce24b01aaa149d8df1c65e8f}
+
+\item 
+\hypertarget{mv-search_8c_ae904ef34e23ad31294bce7d6de91b389}{}int $\ast$ {\bfseries last\+\_\+\+P\+\_\+no}\label{mv-search_8c_ae904ef34e23ad31294bce7d6de91b389}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Motion Vector Search, unified for B and P Pictures. 
+
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de}
+\item Inge Lille-\/\+Langøy \href{mailto:inge.lille-langoy@telenor.com}{\tt inge.\+lille-\/langoy@telenor.\+com}
+\item Rickard Sjoberg \href{mailto:rickard.sjoberg@era.ericsson.se}{\tt rickard.\+sjoberg@era.\+ericsson.\+se}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de}
+\item Jani Lainema \href{mailto:jani.lainema@nokia.com}{\tt jani.\+lainema@nokia.\+com}
+\item Detlev Marpe \href{mailto:marpe@hhi.de}{\tt marpe@hhi.\+de}
+\item Thomas Wedi \href{mailto:wedi@tnt.uni-hannover.de}{\tt wedi@tnt.\+uni-\/hannover.\+de}
+\item Heiko Schwarz \href{mailto:hschwarz@hhi.de}{\tt hschwarz@hhi.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{mv-search_8c_a3c37152c2505f440a8b54f16848781e3}{}\index{mv-\/search.\+c@{mv-\/search.\+c}!Block\+Motion\+Search@{Block\+Motion\+Search}}
+\index{Block\+Motion\+Search@{Block\+Motion\+Search}!mv-\/search.\+c@{mv-\/search.\+c}}
+\subsubsection[{Block\+Motion\+Search(int ref, int list, int mb\+\_\+x, int mb\+\_\+y, int blocktype, int search\+\_\+range, double lambda)}]{\setlength{\rightskip}{0pt plus 5cm}int Block\+Motion\+Search (
+\begin{DoxyParamCaption}
+\item[{int}]{ref, }
+\item[{int}]{list, }
+\item[{int}]{mb\+\_\+x, }
+\item[{int}]{mb\+\_\+y, }
+\item[{int}]{blocktype, }
+\item[{int}]{search\+\_\+range, }
+\item[{double}]{lambda}
+\end{DoxyParamCaption}
+)}\label{mv-search_8c_a3c37152c2505f440a8b54f16848781e3}
+
+
+Block motion search. 
+
+$<$ minimum motion cost after search 
+\begin{DoxyParams}{Parameters}
+{\em ref} & reference idx \\
+\hline
+{\em list} & reference pciture list \\
+\hline
+{\em mb\+\_\+x} & x-\/coordinate inside macroblock \\
+\hline
+{\em mb\+\_\+y} & y-\/coordinate inside macroblock \\
+\hline
+{\em blocktype} & block type (1-\/16x16 ... 7-\/4x4) \\
+\hline
+{\em search\+\_\+range} & 1-\/d search range for integer-\/position search \\
+\hline
+{\em lambda} & lagrangian parameter for determining motion cost \\
+\hline
+\end{DoxyParams}
+\hypertarget{mv-search_8c_ac591a64a8380fcc1581becfaaafdd8f5}{}\index{mv-\/search.\+c@{mv-\/search.\+c}!Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors@{Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors}}
+\index{Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors@{Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors}!mv-\/search.\+c@{mv-\/search.\+c}}
+\subsubsection[{Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors()}]{\setlength{\rightskip}{0pt plus 5cm}void Get\+\_\+\+Direct\+\_\+\+Motion\+\_\+\+Vectors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{mv-search_8c_ac591a64a8380fcc1581becfaaafdd8f5}
+invalid index. Default to zero even though this case should not happen 

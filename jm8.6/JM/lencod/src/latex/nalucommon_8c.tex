@@ -1,0 +1,70 @@
+\hypertarget{nalucommon_8c}{}\section{nalucommon.\+c File Reference}
+\label{nalucommon_8c}\index{nalucommon.\+c@{nalucommon.\+c}}
+
+
+Common N\+A\+L\+U support functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$malloc.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}memory.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nalu.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}memalloc.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+N\+A\+L\+U\+\_\+t $\ast$ \hyperlink{nalucommon_8c_a734ecb2fd18d6fbe6faadd8d6a38e56a}{Alloc\+N\+A\+L\+U} (int buffersize)
+\begin{DoxyCompactList}\small\item\em Allocates memory for a N\+A\+L\+U. \end{DoxyCompactList}\item 
+void \hyperlink{nalucommon_8c_a0ac9016e7dafb88846a2d83213817198}{Free\+N\+A\+L\+U} (N\+A\+L\+U\+\_\+t $\ast$n)
+\begin{DoxyCompactList}\small\item\em Frees a N\+A\+L\+U. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common N\+A\+L\+U support functions. 
+
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{nalucommon_8c_a734ecb2fd18d6fbe6faadd8d6a38e56a}{}\index{nalucommon.\+c@{nalucommon.\+c}!Alloc\+N\+A\+L\+U@{Alloc\+N\+A\+L\+U}}
+\index{Alloc\+N\+A\+L\+U@{Alloc\+N\+A\+L\+U}!nalucommon.\+c@{nalucommon.\+c}}
+\subsubsection[{Alloc\+N\+A\+L\+U(int buffersize)}]{\setlength{\rightskip}{0pt plus 5cm}N\+A\+L\+U\+\_\+t$\ast$ Alloc\+N\+A\+L\+U (
+\begin{DoxyParamCaption}
+\item[{int}]{buffersize}
+\end{DoxyParamCaption}
+)}\label{nalucommon_8c_a734ecb2fd18d6fbe6faadd8d6a38e56a}
+
+
+Allocates memory for a N\+A\+L\+U. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffersize} & size of N\+A\+L\+U buffer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to a N\+A\+L\+U 
+\end{DoxyReturn}
+\hypertarget{nalucommon_8c_a0ac9016e7dafb88846a2d83213817198}{}\index{nalucommon.\+c@{nalucommon.\+c}!Free\+N\+A\+L\+U@{Free\+N\+A\+L\+U}}
+\index{Free\+N\+A\+L\+U@{Free\+N\+A\+L\+U}!nalucommon.\+c@{nalucommon.\+c}}
+\subsubsection[{Free\+N\+A\+L\+U(\+N\+A\+L\+U\+\_\+t $\ast$n)}]{\setlength{\rightskip}{0pt plus 5cm}void Free\+N\+A\+L\+U (
+\begin{DoxyParamCaption}
+\item[{N\+A\+L\+U\+\_\+t $\ast$}]{n}
+\end{DoxyParamCaption}
+)}\label{nalucommon_8c_a0ac9016e7dafb88846a2d83213817198}
+
+
+Frees a N\+A\+L\+U. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & N\+A\+L\+U to be freed \\
+\hline
+\end{DoxyParams}

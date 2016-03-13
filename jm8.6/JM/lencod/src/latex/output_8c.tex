@@ -1,0 +1,148 @@
+\hypertarget{output_8c}{}\section{output.\+c File Reference}
+\label{output_8c}\index{output.\+c@{output.\+c}}
+
+
+Output an image and Trance support.  
+
+
+{\ttfamily \#include \char`\"{}contributors.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mbuffer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{output_8c_a9fdf0dfa523cc569013e8f1d47e3769e}{write\+\_\+picture} (Storable\+Picture $\ast$p, F\+I\+L\+E $\ast$p\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Writes out a storable picture. \end{DoxyCompactList}\item 
+\hypertarget{output_8c_af32d9f8b59d6cd4416803d5f52ebeef2}{}void \hyperlink{output_8c_af32d9f8b59d6cd4416803d5f52ebeef2}{init\+\_\+out\+\_\+buffer} ()\label{output_8c_af32d9f8b59d6cd4416803d5f52ebeef2}
+
+\begin{DoxyCompactList}\small\item\em Initialize output buffer for direct output. \end{DoxyCompactList}\item 
+\hypertarget{output_8c_af1da7d5f6234459b303f46e0d92f263f}{}void \hyperlink{output_8c_af1da7d5f6234459b303f46e0d92f263f}{uninit\+\_\+out\+\_\+buffer} ()\label{output_8c_af1da7d5f6234459b303f46e0d92f263f}
+
+\begin{DoxyCompactList}\small\item\em Uninitialize output buffer for direct output. \end{DoxyCompactList}\item 
+\hypertarget{output_8c_a8b71cec052f3313f0925b43bebba5b79}{}void \hyperlink{output_8c_a8b71cec052f3313f0925b43bebba5b79}{clear\+\_\+picture} (Storable\+Picture $\ast$p)\label{output_8c_a8b71cec052f3313f0925b43bebba5b79}
+
+\begin{DoxyCompactList}\small\item\em Initialize picture memory with (Y\+:0,U\+:128,V\+:128) \end{DoxyCompactList}\item 
+void \hyperlink{output_8c_a43ec8dfdc19a22bc3513b9e8235b313b}{write\+\_\+unpaired\+\_\+field} (Frame\+Store $\ast$fs, F\+I\+L\+E $\ast$p\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Write out not paired direct output fields. A second empty field is generated and combined into the frame buffer. \end{DoxyCompactList}\item 
+void \hyperlink{output_8c_aa4329daf7e22fe27ea69fa6233a0cec9}{flush\+\_\+direct\+\_\+output} (F\+I\+L\+E $\ast$p\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Write out unpaired fields from output buffer. \end{DoxyCompactList}\item 
+void \hyperlink{output_8c_a3c060749eb1ba520b5f7355e98462813}{write\+\_\+stored\+\_\+frame} (Frame\+Store $\ast$fs, F\+I\+L\+E $\ast$p\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Write a frame (from Frame\+Store) \end{DoxyCompactList}\item 
+void \hyperlink{output_8c_ad1631fcb8e3484895ea841dc8fadc8b2}{direct\+\_\+output} (Storable\+Picture $\ast$p, F\+I\+L\+E $\ast$p\+\_\+out)
+\begin{DoxyCompactList}\small\item\em Directly output a picture without storing it in the D\+P\+B. Fields are buffered before they are written to the file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{output_8c_aed4d9de2af7b20d20c632b803c8a7c71}{}Frame\+Store $\ast$ {\bfseries out\+\_\+buffer}\label{output_8c_aed4d9de2af7b20d20c632b803c8a7c71}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Output an image and Trance support. 
+
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Karsten Suehring \href{mailto:suehring@hhi.de}{\tt suehring@hhi.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{output_8c_ad1631fcb8e3484895ea841dc8fadc8b2}{}\index{output.\+c@{output.\+c}!direct\+\_\+output@{direct\+\_\+output}}
+\index{direct\+\_\+output@{direct\+\_\+output}!output.\+c@{output.\+c}}
+\subsubsection[{direct\+\_\+output(\+Storable\+Picture $\ast$p, F\+I\+L\+E $\ast$p\+\_\+out)}]{\setlength{\rightskip}{0pt plus 5cm}void direct\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{Storable\+Picture $\ast$}]{p, }
+\item[{F\+I\+L\+E $\ast$}]{p\+\_\+out}
+\end{DoxyParamCaption}
+)}\label{output_8c_ad1631fcb8e3484895ea841dc8fadc8b2}
+
+
+Directly output a picture without storing it in the D\+P\+B. Fields are buffered before they are written to the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Picture for output \\
+\hline
+{\em p\+\_\+out} & Output file \\
+\hline
+\end{DoxyParams}
+\hypertarget{output_8c_aa4329daf7e22fe27ea69fa6233a0cec9}{}\index{output.\+c@{output.\+c}!flush\+\_\+direct\+\_\+output@{flush\+\_\+direct\+\_\+output}}
+\index{flush\+\_\+direct\+\_\+output@{flush\+\_\+direct\+\_\+output}!output.\+c@{output.\+c}}
+\subsubsection[{flush\+\_\+direct\+\_\+output(\+F\+I\+L\+E $\ast$p\+\_\+out)}]{\setlength{\rightskip}{0pt plus 5cm}void flush\+\_\+direct\+\_\+output (
+\begin{DoxyParamCaption}
+\item[{F\+I\+L\+E $\ast$}]{p\+\_\+out}
+\end{DoxyParamCaption}
+)}\label{output_8c_aa4329daf7e22fe27ea69fa6233a0cec9}
+
+
+Write out unpaired fields from output buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+out} & Output file \\
+\hline
+\end{DoxyParams}
+\hypertarget{output_8c_a9fdf0dfa523cc569013e8f1d47e3769e}{}\index{output.\+c@{output.\+c}!write\+\_\+picture@{write\+\_\+picture}}
+\index{write\+\_\+picture@{write\+\_\+picture}!output.\+c@{output.\+c}}
+\subsubsection[{write\+\_\+picture(\+Storable\+Picture $\ast$p, F\+I\+L\+E $\ast$p\+\_\+out)}]{\setlength{\rightskip}{0pt plus 5cm}void write\+\_\+picture (
+\begin{DoxyParamCaption}
+\item[{Storable\+Picture $\ast$}]{p, }
+\item[{F\+I\+L\+E $\ast$}]{p\+\_\+out}
+\end{DoxyParamCaption}
+)}\label{output_8c_a9fdf0dfa523cc569013e8f1d47e3769e}
+
+
+Writes out a storable picture. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Picture to be written \\
+\hline
+{\em p\+\_\+out} & Output file \\
+\hline
+\end{DoxyParams}
+\hypertarget{output_8c_a3c060749eb1ba520b5f7355e98462813}{}\index{output.\+c@{output.\+c}!write\+\_\+stored\+\_\+frame@{write\+\_\+stored\+\_\+frame}}
+\index{write\+\_\+stored\+\_\+frame@{write\+\_\+stored\+\_\+frame}!output.\+c@{output.\+c}}
+\subsubsection[{write\+\_\+stored\+\_\+frame(\+Frame\+Store $\ast$fs, F\+I\+L\+E $\ast$p\+\_\+out)}]{\setlength{\rightskip}{0pt plus 5cm}void write\+\_\+stored\+\_\+frame (
+\begin{DoxyParamCaption}
+\item[{Frame\+Store $\ast$}]{fs, }
+\item[{F\+I\+L\+E $\ast$}]{p\+\_\+out}
+\end{DoxyParamCaption}
+)}\label{output_8c_a3c060749eb1ba520b5f7355e98462813}
+
+
+Write a frame (from Frame\+Store) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fs} & Frame\+Store containing the frame \\
+\hline
+{\em p\+\_\+out} & Output file \\
+\hline
+\end{DoxyParams}
+\hypertarget{output_8c_a43ec8dfdc19a22bc3513b9e8235b313b}{}\index{output.\+c@{output.\+c}!write\+\_\+unpaired\+\_\+field@{write\+\_\+unpaired\+\_\+field}}
+\index{write\+\_\+unpaired\+\_\+field@{write\+\_\+unpaired\+\_\+field}!output.\+c@{output.\+c}}
+\subsubsection[{write\+\_\+unpaired\+\_\+field(\+Frame\+Store $\ast$fs, F\+I\+L\+E $\ast$p\+\_\+out)}]{\setlength{\rightskip}{0pt plus 5cm}void write\+\_\+unpaired\+\_\+field (
+\begin{DoxyParamCaption}
+\item[{Frame\+Store $\ast$}]{fs, }
+\item[{F\+I\+L\+E $\ast$}]{p\+\_\+out}
+\end{DoxyParamCaption}
+)}\label{output_8c_a43ec8dfdc19a22bc3513b9e8235b313b}
+
+
+Write out not paired direct output fields. A second empty field is generated and combined into the frame buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fs} & Frame\+Store that contains a single field \\
+\hline
+{\em p\+\_\+out} & Output file \\
+\hline
+\end{DoxyParams}

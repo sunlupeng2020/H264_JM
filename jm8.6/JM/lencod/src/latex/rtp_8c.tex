@@ -1,0 +1,213 @@
+\hypertarget{rtp_8c}{}\section{rtp.\+c File Reference}
+\label{rtp_8c}\index{rtp.\+c@{rtp.\+c}}
+
+
+Functions to handle R\+T\+P headers and packets per R\+F\+C1889 and R\+T\+P N\+A\+L spec Functions support little endian systems only (Intel, not Motorola/\+Sparc)  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$memory.\+h$>$}\\*
+{\ttfamily \#include $<$malloc.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}rtp.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}elements.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}defines.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}header.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}fmo.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parsetcommon.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}parset.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nalucommon.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{rtp_8c_a012f05fda1b13afb5282bbf941feac40}{}\#define {\bfseries S\+Y\+M\+T\+R\+A\+C\+E\+S\+T\+R\+I\+N\+G}(s)\label{rtp_8c_a012f05fda1b13afb5282bbf941feac40}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{rtp_8c_abf5f3bb2d6ed2284264d00f4ae59bd54}{Compose\+R\+T\+P\+Packet} (R\+T\+Ppacket\+\_\+t $\ast$p)
+\begin{DoxyCompactList}\small\item\em Compose\+R\+T\+Ppacket composes the complete R\+T\+P packet using the various structure members of the R\+T\+Ppacket\+\_\+t structure. \end{DoxyCompactList}\item 
+int \hyperlink{rtp_8c_a6eab9fdcd8ac081fd69a8ef41427567a}{Write\+R\+T\+P\+Packet} (R\+T\+Ppacket\+\_\+t $\ast$p, F\+I\+L\+E $\ast$\hyperlink{rtp_8c_a3efb0e1a16208deecbd84c15401f7cf8}{f})
+\begin{DoxyCompactList}\small\item\em Write\+R\+T\+P\+Packet writes the supplied R\+T\+P packet to the output file. \end{DoxyCompactList}\item 
+int \hyperlink{rtp_8c_a6aa7bbaaf23a77a767a82d828d06385a}{Write\+R\+T\+P\+N\+A\+L\+U} (N\+A\+L\+U\+\_\+t $\ast$n)
+\begin{DoxyCompactList}\small\item\em int R\+T\+P\+Write\+N\+A\+L\+U write a N\+A\+L\+U to the R\+T\+P file \end{DoxyCompactList}\item 
+void \hyperlink{rtp_8c_af0174c81abc47a2e3b1c02d29a94b80b}{R\+T\+P\+Update\+Timestamp} (int tr)
+\begin{DoxyCompactList}\small\item\em R\+T\+P\+Update\+Timestamp\+: patches the R\+T\+P timestamp depending on the T\+R. \end{DoxyCompactList}\item 
+void \hyperlink{rtp_8c_a020041e133cb6d4b19120877bfd83ad4}{Open\+R\+T\+P\+File} (char $\ast$Filename)
+\begin{DoxyCompactList}\small\item\em Opens the output file for the R\+T\+P packet stream. \end{DoxyCompactList}\item 
+void \hyperlink{rtp_8c_a48f8d1954529fc41ee05cfe6eaacf90f}{Close\+R\+T\+P\+File} ()
+\begin{DoxyCompactList}\small\item\em Closes the output file for the R\+T\+P packet stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{rtp_8c_a75b1c6c93fdb72d23fccefbb1f9b2815}{}int {\bfseries Current\+R\+T\+P\+Timestamp} = 0\label{rtp_8c_a75b1c6c93fdb72d23fccefbb1f9b2815}
+
+\item 
+int \hyperlink{rtp_8c_a28d141332913c0991a5418700e3d0cd5}{Current\+R\+T\+P\+Sequence\+Number} = 0
+\item 
+F\+I\+L\+E $\ast$ \hyperlink{rtp_8c_a3efb0e1a16208deecbd84c15401f7cf8}{f}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions to handle R\+T\+P headers and packets per R\+F\+C1889 and R\+T\+P N\+A\+L spec Functions support little endian systems only (Intel, not Motorola/\+Sparc) 
+
+\begin{DoxyDate}{Date}
+30 September 2001
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{rtp_8c_a48f8d1954529fc41ee05cfe6eaacf90f}{}\index{rtp.\+c@{rtp.\+c}!Close\+R\+T\+P\+File@{Close\+R\+T\+P\+File}}
+\index{Close\+R\+T\+P\+File@{Close\+R\+T\+P\+File}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{Close\+R\+T\+P\+File()}]{\setlength{\rightskip}{0pt plus 5cm}void Close\+R\+T\+P\+File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{rtp_8c_a48f8d1954529fc41ee05cfe6eaacf90f}
+
+
+Closes the output file for the R\+T\+P packet stream. 
+
+\begin{DoxyReturn}{Returns}
+none. Function terminates the program in case of an error 
+\end{DoxyReturn}
+\hypertarget{rtp_8c_abf5f3bb2d6ed2284264d00f4ae59bd54}{}\index{rtp.\+c@{rtp.\+c}!Compose\+R\+T\+P\+Packet@{Compose\+R\+T\+P\+Packet}}
+\index{Compose\+R\+T\+P\+Packet@{Compose\+R\+T\+P\+Packet}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{Compose\+R\+T\+P\+Packet(\+R\+T\+Ppacket\+\_\+t $\ast$p)}]{\setlength{\rightskip}{0pt plus 5cm}int Compose\+R\+T\+P\+Packet (
+\begin{DoxyParamCaption}
+\item[{R\+T\+Ppacket\+\_\+t $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\label{rtp_8c_abf5f3bb2d6ed2284264d00f4ae59bd54}
+
+
+Compose\+R\+T\+Ppacket composes the complete R\+T\+P packet using the various structure members of the R\+T\+Ppacket\+\_\+t structure. 
+
+\begin{DoxyReturn}{Returns}
+0 in case of success negative error code in case of failure
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Parameters}
+Caller is responsible to allocate enough memory for the generated packet in parameter-\/$>$packet. Typically a malloc of 12+paylen bytes is sufficient
+\end{DoxyParagraph}
+\begin{DoxyParagraph}{Side effects}
+none
+\end{DoxyParagraph}
+\begin{DoxyNote}{Note}
+Function contains assert() tests for debug purposes (consistency checks for R\+T\+P header fields
+\end{DoxyNote}
+\begin{DoxyDate}{Date}
+30 Spetember 2001
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyAuthor}
+\hypertarget{rtp_8c_a020041e133cb6d4b19120877bfd83ad4}{}\index{rtp.\+c@{rtp.\+c}!Open\+R\+T\+P\+File@{Open\+R\+T\+P\+File}}
+\index{Open\+R\+T\+P\+File@{Open\+R\+T\+P\+File}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{Open\+R\+T\+P\+File(char $\ast$\+Filename)}]{\setlength{\rightskip}{0pt plus 5cm}void Open\+R\+T\+P\+File (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{Filename}
+\end{DoxyParamCaption}
+)}\label{rtp_8c_a020041e133cb6d4b19120877bfd83ad4}
+
+
+Opens the output file for the R\+T\+P packet stream. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Filename} & The filename of the file to be opened\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. Function terminates the program in case of an error 
+\end{DoxyReturn}
+\hypertarget{rtp_8c_af0174c81abc47a2e3b1c02d29a94b80b}{}\index{rtp.\+c@{rtp.\+c}!R\+T\+P\+Update\+Timestamp@{R\+T\+P\+Update\+Timestamp}}
+\index{R\+T\+P\+Update\+Timestamp@{R\+T\+P\+Update\+Timestamp}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{R\+T\+P\+Update\+Timestamp(int tr)}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+P\+Update\+Timestamp (
+\begin{DoxyParamCaption}
+\item[{int}]{tr}
+\end{DoxyParamCaption}
+)}\label{rtp_8c_af0174c81abc47a2e3b1c02d29a94b80b}
+
+
+R\+T\+P\+Update\+Timestamp\+: patches the R\+T\+P timestamp depending on the T\+R. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & T\+Rof the following N\+A\+L\+Us\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none. 
+\end{DoxyReturn}
+This is a violation of the security req. of R\+T\+P (random timestamp), but easier to debug
+
+The following code assumes a wrap around of T\+R at 256, and needs to be changed as soon as this is no more true.
+
+The support for B frames is a bit tricky, because it is not easy to distinguish between a natural wrap-\/around of the tr, and the intentional going back of the tr because of a B frame. It is solved here by a heuristic means\+: It is assumed that B frames are never \char`\"{}older\char`\"{} than 10 tr ticks. Everything higher than 10 is considered a wrap around.\hypertarget{rtp_8c_a6aa7bbaaf23a77a767a82d828d06385a}{}\index{rtp.\+c@{rtp.\+c}!Write\+R\+T\+P\+N\+A\+L\+U@{Write\+R\+T\+P\+N\+A\+L\+U}}
+\index{Write\+R\+T\+P\+N\+A\+L\+U@{Write\+R\+T\+P\+N\+A\+L\+U}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{Write\+R\+T\+P\+N\+A\+L\+U(\+N\+A\+L\+U\+\_\+t $\ast$n)}]{\setlength{\rightskip}{0pt plus 5cm}int Write\+R\+T\+P\+N\+A\+L\+U (
+\begin{DoxyParamCaption}
+\item[{N\+A\+L\+U\+\_\+t $\ast$}]{n}
+\end{DoxyParamCaption}
+)}\label{rtp_8c_a6aa7bbaaf23a77a767a82d828d06385a}
+
+
+int R\+T\+P\+Write\+N\+A\+L\+U write a N\+A\+L\+U to the R\+T\+P file 
+
+\begin{DoxyReturn}{Returns}
+Number of bytes written to output file
+\end{DoxyReturn}
+\begin{DoxyParagraph}{Side effects}
+Packet written, R\+T\+P\+Sequence\+Number and R\+T\+P\+Timestamp updated
+\end{DoxyParagraph}
+\begin{DoxyDate}{Date}
+December 13, 2002
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyAuthor}
+For error resilience work, we need the correct marker bit. Introduce a nalu-\/$>$marker and set it in \hyperlink{slice_8c_a52c3ee904fa4614482ef4c207f03fe92}{terminate\+\_\+slice()}? \hypertarget{rtp_8c_a6eab9fdcd8ac081fd69a8ef41427567a}{}\index{rtp.\+c@{rtp.\+c}!Write\+R\+T\+P\+Packet@{Write\+R\+T\+P\+Packet}}
+\index{Write\+R\+T\+P\+Packet@{Write\+R\+T\+P\+Packet}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{Write\+R\+T\+P\+Packet(\+R\+T\+Ppacket\+\_\+t $\ast$p, F\+I\+L\+E $\ast$f)}]{\setlength{\rightskip}{0pt plus 5cm}int Write\+R\+T\+P\+Packet (
+\begin{DoxyParamCaption}
+\item[{R\+T\+Ppacket\+\_\+t $\ast$}]{p, }
+\item[{F\+I\+L\+E $\ast$}]{f}
+\end{DoxyParamCaption}
+)}\label{rtp_8c_a6eab9fdcd8ac081fd69a8ef41427567a}
+
+
+Write\+R\+T\+P\+Packet writes the supplied R\+T\+P packet to the output file. 
+
+\begin{DoxyReturn}{Returns}
+0 in case of access $<$0 in case of write failure (typically fatal)
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the R\+T\+P packet to be written (after \hyperlink{rtp_8c_abf5f3bb2d6ed2284264d00f4ae59bd54}{Compose\+R\+T\+P\+Packet()} ) \\
+\hline
+{\em f} & output file\\
+\hline
+\end{DoxyParams}
+\begin{DoxyDate}{Date}
+October 23, 2001
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyAuthor}
+
+
+\subsection{Variable Documentation}
+\hypertarget{rtp_8c_a28d141332913c0991a5418700e3d0cd5}{}\index{rtp.\+c@{rtp.\+c}!Current\+R\+T\+P\+Sequence\+Number@{Current\+R\+T\+P\+Sequence\+Number}}
+\index{Current\+R\+T\+P\+Sequence\+Number@{Current\+R\+T\+P\+Sequence\+Number}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{Current\+R\+T\+P\+Sequence\+Number}]{\setlength{\rightskip}{0pt plus 5cm}int Current\+R\+T\+P\+Sequence\+Number = 0}\label{rtp_8c_a28d141332913c0991a5418700e3d0cd5}
+The R\+T\+P timestamp of the current packet, incremented with all P and I frames \hypertarget{rtp_8c_a3efb0e1a16208deecbd84c15401f7cf8}{}\index{rtp.\+c@{rtp.\+c}!f@{f}}
+\index{f@{f}!rtp.\+c@{rtp.\+c}}
+\subsubsection[{f}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+L\+E$\ast$ f}\label{rtp_8c_a3efb0e1a16208deecbd84c15401f7cf8}
+The R\+T\+P sequence number of the current packet incremented by one for each sent packet 

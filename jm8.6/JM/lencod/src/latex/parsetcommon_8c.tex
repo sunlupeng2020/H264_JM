@@ -1,0 +1,107 @@
+\hypertarget{parsetcommon_8c}{}\section{parsetcommon.\+c File Reference}
+\label{parsetcommon_8c}\index{parsetcommon.\+c@{parsetcommon.\+c}}
+
+
+Picture and Sequence Parameter set generation and handling.  
+
+
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$memory.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}parsetcommon.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}memalloc.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+pic\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$ \hyperlink{parsetcommon_8c_a036f83bd5e8367b55980bfa2fa7dc5bc}{Alloc\+P\+P\+S} ()
+\begin{DoxyCompactList}\small\item\em Allocates memory for a pps. \end{DoxyCompactList}\item 
+seq\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$ \hyperlink{parsetcommon_8c_a7dee8f59725c1aa389115d364acddc6e}{Alloc\+S\+P\+S} ()
+\begin{DoxyCompactList}\small\item\em Allocates memory for am sps. \end{DoxyCompactList}\item 
+void \hyperlink{parsetcommon_8c_aabde756b030239d1f7a1ec56ca128e10}{Free\+P\+P\+S} (pic\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$pps)
+\begin{DoxyCompactList}\small\item\em Frees a pps. \end{DoxyCompactList}\item 
+void \hyperlink{parsetcommon_8c_accd8cd1caef2a76161baa525e2a339d6}{Free\+S\+P\+S} (seq\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$sps)
+\begin{DoxyCompactList}\small\item\em Frees a sps. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Picture and Sequence Parameter set generation and handling. 
+
+\hyperlink{parset_8c}{parset.\+c} \begin{DoxyDate}{Date}
+25 November 2002 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{parsetcommon_8c_a036f83bd5e8367b55980bfa2fa7dc5bc}{}\index{parsetcommon.\+c@{parsetcommon.\+c}!Alloc\+P\+P\+S@{Alloc\+P\+P\+S}}
+\index{Alloc\+P\+P\+S@{Alloc\+P\+P\+S}!parsetcommon.\+c@{parsetcommon.\+c}}
+\subsubsection[{Alloc\+P\+P\+S()}]{\setlength{\rightskip}{0pt plus 5cm}pic\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t$\ast$ Alloc\+P\+P\+S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{parsetcommon_8c_a036f83bd5e8367b55980bfa2fa7dc5bc}
+
+
+Allocates memory for a pps. 
+
+\begin{DoxyReturn}{Returns}
+pointer to a pps 
+\end{DoxyReturn}
+\hypertarget{parsetcommon_8c_a7dee8f59725c1aa389115d364acddc6e}{}\index{parsetcommon.\+c@{parsetcommon.\+c}!Alloc\+S\+P\+S@{Alloc\+S\+P\+S}}
+\index{Alloc\+S\+P\+S@{Alloc\+S\+P\+S}!parsetcommon.\+c@{parsetcommon.\+c}}
+\subsubsection[{Alloc\+S\+P\+S()}]{\setlength{\rightskip}{0pt plus 5cm}seq\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t$\ast$ Alloc\+S\+P\+S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{parsetcommon_8c_a7dee8f59725c1aa389115d364acddc6e}
+
+
+Allocates memory for am sps. 
+
+\begin{DoxyReturn}{Returns}
+pointer to a sps 
+\end{DoxyReturn}
+\hypertarget{parsetcommon_8c_aabde756b030239d1f7a1ec56ca128e10}{}\index{parsetcommon.\+c@{parsetcommon.\+c}!Free\+P\+P\+S@{Free\+P\+P\+S}}
+\index{Free\+P\+P\+S@{Free\+P\+P\+S}!parsetcommon.\+c@{parsetcommon.\+c}}
+\subsubsection[{Free\+P\+P\+S(pic\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$pps)}]{\setlength{\rightskip}{0pt plus 5cm}void Free\+P\+P\+S (
+\begin{DoxyParamCaption}
+\item[{pic\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$}]{pps}
+\end{DoxyParamCaption}
+)}\label{parsetcommon_8c_aabde756b030239d1f7a1ec56ca128e10}
+
+
+Frees a pps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pps} & pps to be freed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{parsetcommon_8c_accd8cd1caef2a76161baa525e2a339d6}{}\index{parsetcommon.\+c@{parsetcommon.\+c}!Free\+S\+P\+S@{Free\+S\+P\+S}}
+\index{Free\+S\+P\+S@{Free\+S\+P\+S}!parsetcommon.\+c@{parsetcommon.\+c}}
+\subsubsection[{Free\+S\+P\+S(seq\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$sps)}]{\setlength{\rightskip}{0pt plus 5cm}void Free\+S\+P\+S (
+\begin{DoxyParamCaption}
+\item[{seq\+\_\+parameter\+\_\+set\+\_\+rbsp\+\_\+t $\ast$}]{sps}
+\end{DoxyParamCaption}
+)}\label{parsetcommon_8c_accd8cd1caef2a76161baa525e2a339d6}
+
+
+Frees a sps. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sps} & sps to be freed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}

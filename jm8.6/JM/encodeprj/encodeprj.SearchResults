@@ -1,0 +1,11 @@
+---- pic_order_present_flag Matches (13 in 5 files) ----
+Global.h (e:\std_jm86\jm8.6\jm\lencod\inc):  unsigned int pic_order_present_flag; //
+Header.c (e:\std_jm86\jm8.6\jm\lencod\src):    if (img->pic_order_present_flag && !field_pic_flag)  // img->fld_flag
+Header.c (e:\std_jm86\jm8.6\jm\lencod\src):    if (img->pic_order_present_flag && !field_pic_flag)  // img->fld_flag
+Lencod.c (e:\std_jm86\jm8.6\jm\lencod\src)://  img->pic_order_present_flag=0;    //img->delta_pic_order_cnt[1] not sent
+Lencod.c (e:\std_jm86\jm8.6\jm\lencod\src):    img->pic_order_present_flag=0;
+Lencod.c (e:\std_jm86\jm8.6\jm\lencod\src):    img->pic_order_present_flag=1;//POC的三种计算方式=1指明会在片头会有句法元素指明这些参数
+Parset.c (e:\std_jm86\jm8.6\jm\lencod\src):  pps->pic_order_present_flag = img->pic_order_present_flag;
+Parset.c (e:\std_jm86\jm8.6\jm\lencod\src):  pps->pic_order_present_flag = img->pic_order_present_flag;
+Parset.c (e:\std_jm86\jm8.6\jm\lencod\src):  len+=u_1  ("PPS: pic_order_present_flag",                  pps->pic_order_present_flag,                    partition);
+Parsetcommon.h (e:\std_jm86\jm8.6\jm\lencod\inc):  Boolean      pic_order_present_flag;                           // u(1)

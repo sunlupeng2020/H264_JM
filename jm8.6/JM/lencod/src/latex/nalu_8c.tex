@@ -1,0 +1,69 @@
+\hypertarget{nalu_8c}{}\section{nalu.\+c File Reference}
+\label{nalu_8c}\index{nalu.\+c@{nalu.\+c}}
+
+
+Common N\+A\+L\+U support functions.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$assert.\+h$>$}\\*
+{\ttfamily \#include $<$malloc.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}memory.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}nalu.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{nalu_8c_a8c74f03b047048d48c443441a433dc33}{R\+B\+S\+Pto\+N\+A\+L\+U} (char $\ast$rbsp, N\+A\+L\+U\+\_\+t $\ast$nalu, int rbsp\+\_\+size, int nal\+\_\+unit\+\_\+type, int nal\+\_\+reference\+\_\+idc, int min\+\_\+num\+\_\+bytes, int Use\+Annexb\+Long\+Startcode)
+\begin{DoxyCompactList}\small\item\em Converts an R\+B\+S\+P to a N\+A\+L\+U. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Common N\+A\+L\+U support functions. 
+
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Stephan Wenger \href{mailto:stewe@cs.tu-berlin.de}{\tt stewe@cs.\+tu-\/berlin.\+de} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{nalu_8c_a8c74f03b047048d48c443441a433dc33}{}\index{nalu.\+c@{nalu.\+c}!R\+B\+S\+Pto\+N\+A\+L\+U@{R\+B\+S\+Pto\+N\+A\+L\+U}}
+\index{R\+B\+S\+Pto\+N\+A\+L\+U@{R\+B\+S\+Pto\+N\+A\+L\+U}!nalu.\+c@{nalu.\+c}}
+\subsubsection[{R\+B\+S\+Pto\+N\+A\+L\+U(char $\ast$rbsp, N\+A\+L\+U\+\_\+t $\ast$nalu, int rbsp\+\_\+size, int nal\+\_\+unit\+\_\+type, int nal\+\_\+reference\+\_\+idc, int min\+\_\+num\+\_\+bytes, int Use\+Annexb\+Long\+Startcode)}]{\setlength{\rightskip}{0pt plus 5cm}int R\+B\+S\+Pto\+N\+A\+L\+U (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{rbsp, }
+\item[{N\+A\+L\+U\+\_\+t $\ast$}]{nalu, }
+\item[{int}]{rbsp\+\_\+size, }
+\item[{int}]{nal\+\_\+unit\+\_\+type, }
+\item[{int}]{nal\+\_\+reference\+\_\+idc, }
+\item[{int}]{min\+\_\+num\+\_\+bytes, }
+\item[{int}]{Use\+Annexb\+Long\+Startcode}
+\end{DoxyParamCaption}
+)}\label{nalu_8c_a8c74f03b047048d48c443441a433dc33}
+
+
+Converts an R\+B\+S\+P to a N\+A\+L\+U. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rbsp} & byte buffer with the rbsp \\
+\hline
+{\em nalu} & nalu structure to be filled \\
+\hline
+{\em rbsp\+\_\+size} & size of the rbsp in bytes \\
+\hline
+{\em nal\+\_\+unit\+\_\+type} & as in J\+V\+T doc \\
+\hline
+{\em nal\+\_\+reference\+\_\+idc} & as in J\+V\+T doc \\
+\hline
+{\em min\+\_\+num\+\_\+bytes} & some incomprehensible C\+A\+B\+A\+C stuff \\
+\hline
+{\em Use\+Annexb\+Long\+Startcode} & when 1 and when using Annex\+B bytestreams, then use a long startcode prefix\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+length of the N\+A\+L\+U in bytes 
+\end{DoxyReturn}

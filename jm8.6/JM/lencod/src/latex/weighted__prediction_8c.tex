@@ -1,0 +1,52 @@
+\hypertarget{weighted__prediction_8c}{}\section{weighted\+\_\+prediction.\+c File Reference}
+\label{weighted__prediction_8c}\index{weighted\+\_\+prediction.\+c@{weighted\+\_\+prediction.\+c}}
+
+
+Estimate weights for W\+P.  
+
+
+{\ttfamily \#include \char`\"{}contributors.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$math.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}global.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}image.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{weighted__prediction_8c_a358ba8b4677fc366a506d61178d5aee2}{}\#define {\bfseries Clip}(min,  max,  val)~(((val)$<$(min))?(min)\+:(((val)$>$(max))?(max)\+:(val)))\label{weighted__prediction_8c_a358ba8b4677fc366a506d61178d5aee2}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{weighted__prediction_8c_a0e33b1598724edaec13415a067eb3cc4}{}void \hyperlink{weighted__prediction_8c_a0e33b1598724edaec13415a067eb3cc4}{estimate\+\_\+weighting\+\_\+factor\+\_\+\+P\+\_\+slice} ()\label{weighted__prediction_8c_a0e33b1598724edaec13415a067eb3cc4}
+
+\begin{DoxyCompactList}\small\item\em Estimates reference picture weighting factors. \end{DoxyCompactList}\item 
+void \hyperlink{weighted__prediction_8c_a9a1532623e38fc9da2a602997a058d2b}{estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice} ()
+\begin{DoxyCompactList}\small\item\em Estimates reference picture weighting factors. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Estimate weights for W\+P. 
+
+\begin{DoxyAuthor}{Author}
+Main contributors (see contributors.\+h for copyright, address and affiliation details)
+\begin{DoxyItemize}
+\item Alexis Michael Tourapis \href{mailto:alexismt@ieee.org}{\tt alexismt@ieee.\+org} 
+\end{DoxyItemize}
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{weighted__prediction_8c_a9a1532623e38fc9da2a602997a058d2b}{}\index{weighted\+\_\+prediction.\+c@{weighted\+\_\+prediction.\+c}!estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice@{estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice}}
+\index{estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice@{estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice}!weighted\+\_\+prediction.\+c@{weighted\+\_\+prediction.\+c}}
+\subsubsection[{estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice()}]{\setlength{\rightskip}{0pt plus 5cm}void estimate\+\_\+weighting\+\_\+factor\+\_\+\+B\+\_\+slice (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{weighted__prediction_8c_a9a1532623e38fc9da2a602997a058d2b}
+
+
+Estimates reference picture weighting factors. 
+
+implicit mode 
